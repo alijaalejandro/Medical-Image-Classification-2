@@ -1,5 +1,5 @@
 ---
-title: "Proyecto de clasificación de imágenes médicas con modelo pre-entrenado" 
+title: "Proyecto_de_clasificación_de_imágenes_médicas_con_modelo_pre-entrenado" 
 auhor: "Alejandro Alija, PhD"
 output:
   github_document:
