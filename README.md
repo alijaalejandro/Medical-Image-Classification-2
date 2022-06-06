@@ -77,7 +77,7 @@ En esencia, el proyecto consiste en descargar un conjunto de imágenes médicas 
 
 ## Cómo usar este repositorio
 
-Una vez leída esta introducción, el lector que lo desee puede tratar de seguir el código paso a paso que se encuentra en este [notebook de R](/source/CNN-Clasificador.Rmd). Aquellos lectores que deseen ejecutar el proyecto completo, pueden clonar o descargar este repositorio y abrir el [proyecto de RStudio](/source/UseCase1-CT-Scans.Rproj). Para aquellos desarrolladores que se encuentren más cómodos con Jupyter Notebooks, también se ha generado el [correspondiente fichero ](/source/CNN-Clasificador.ipynb). Para trabajar en el entorno Google Colab se puede invocar a la siguiente llamada ```https://colab.research.google.com/github/https://github.com/alijaalejandro/Medical-Image-Clasification/blob/master/source/Clasificador%20de%20imagenes%20medicas%20con%20modelo%20pre-entrenado.ipynb```
+Una vez leída esta introducción, el lector que lo desee puede tratar de seguir el código paso a paso que se encuentra en este [notebook de R](/source/CNN-Clasificador.Rmd). Aquellos lectores que deseen ejecutar el proyecto completo, pueden clonar o descargar este repositorio y abrir el [proyecto de RStudio](/source/UseCase1-CT-Scans.Rproj). Para aquellos desarrolladores que se encuentren más cómodos con Jupyter Notebooks, también se ha generado el [correspondiente fichero ](/source/CNN-Clasificador.ipynb). Para trabajar en el entorno Google Colab se puede invocar a la siguiente llamada https://colab.research.google.com/github/https://github.com/alijaalejandro/Medical-Image-Clasification/blob/master/source/Clasificador%20de%20imagenes%20medicas%20con%20modelo%20pre-entrenado.ipynb
 
 
 
