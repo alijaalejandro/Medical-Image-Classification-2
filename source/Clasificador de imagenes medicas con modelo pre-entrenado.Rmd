@@ -72,6 +72,7 @@ Para ejecutar este Notebook en (Google Colab)[<https://colab.research.google.com
 system("mkdir data")
 system("mkdir data/Pneumothorax")
 system("mkdir data/No-Finding")
+system("mkdir model/disseasemodel")
 
 ```
 
@@ -79,11 +80,10 @@ system("mkdir data/No-Finding")
 
 Una vez subidos los ficheros debemos de ver algo tal que así en Google Colab.
 
+5. Subimos el modelo pre-entrenado (_disseasemodel_) a su directorio correspondiente.
+
 Ejemplo de imágenes de datos: ![imágenes en Colab](../images/resultado_colab.jpeg)
 
-**NOTA IMPORTANTE**
-
-LAS IMÁGENES DE ENTRENAMIENTO Y TEST OCUPAN UN VOLUMEN EN DISCO DE 25GB DEBIDO A SU ELEVADO NUMERO. EL USUARIO HA DE TENER EN CUENTA LOS TIEMPOS DE CARGA Y DESCARGA ASÍ COMO QUE ES POSIBLE QUE NO PUEDA CARGARLAS TODAS EN COLAB. CUANTAS MENOS IMAGENES SE CARGUEN EN COLAB PEORES SERAN LOS RESULTADOS DE LOS ENTRENAMIENTOS Y LAS PREDICCIONES.
 
 # Lectura de datos
 
@@ -188,8 +188,7 @@ Lo primero que hacemos es cargar un modelo pre-entrenado con 1500 imágenes de c
 
 ```{r}
 #model <- load_model_tf("./model/disseasemodel/")
-
-model <- load_model_hdf5("./model/disseasemodel/")
+model <- load_model_hdf5("./model/disseasemodel/disseasemodel")
 ```
 
 Una vez cargado el modelo entrenado, vamos a intentar hacer un ajuste sobre el 20% de los datos que dejamos para test.
