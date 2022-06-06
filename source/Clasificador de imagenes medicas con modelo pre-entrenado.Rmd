@@ -27,6 +27,8 @@ date: "Febrero, 2022"
 
 ## Instalación de dependencias
 
+Nota: si es la primera vez que ejecutas el notebook cambia la variable a TRUE (T) para instalar las dependencias. La primera ejecución tardará varios minutos en finalizar.
+
 ```{r}
 install <- F
 if (install==T){
@@ -58,7 +60,7 @@ library(patchwork)
 
 *Esta sección solo es importante para aquellos usuarios que deseen ejecutar el código en Google Colab*
 
-Para ejecutar este Notebook en (Google Colab)[<https://colab.research.google.com/>] debemos de importar los datos al espacio local de trabajo de Colab. Los pasos son los siguientes:
+Para ejecutar este Notebook en [Google Colab](https://colab.research.google.com/) debemos de importar los datos al espacio local de trabajo de Colab. Los pasos son los siguientes:
 
 1.  Accedemos a la [siguiente dirección](https://drive.google.com/file/d/18YrsDFt4e2q1MHtwZl4_dlhGo9GZ7gZa/view?usp=sharing) en Google Drive y descargamos el directorio comprimido de los datos.
 
@@ -188,7 +190,6 @@ test_label <- to_categorical(test_target)
 Lo primero que hacemos es cargar un modelo pre-entrenado con 1500 imágenes de cada tipo. El entrenamiento de este modelo con esa cantidad tan grande imágenes requiere de una gran cantidad de espacio en disco para el almacenamiento de las imágenes además de alta potencia de cálculo en términos de CPU y memoria RAM. Por este motivo, para permitir al usuario ejecutar este notebook y comprobar los resultados del modelo debemos de partir de un modelo previamente entrenado. Si optaramos por reducir significativamente el número de imágenes de entrenamiento, la precisión del modelo decae rápidamente.
 
 ```{r}
-#model <- load_model_tf("./model/disseasemodel/")
 model <- load_model_hdf5("./model/disseasemodel/disseasemodel")
 ```
 
