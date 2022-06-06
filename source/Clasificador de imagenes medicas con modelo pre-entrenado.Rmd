@@ -201,7 +201,7 @@ fit_dissease <- model %>%
       epochs = 25,
       batch_size = 512, # try also 256, 512
       verbose = 2,
-      validation_split = 0.2)
+      validation_split = 0.8)
 ```
 
 Una visualización rápida sobre como se comporta el algoritmo sobre las imágenes que hemos reservado para validar.

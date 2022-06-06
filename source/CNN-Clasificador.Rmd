@@ -110,10 +110,7 @@ lsf <- list.files("../data/Pneumothorax", full.names = TRUE)
 # Restrinjo la lista a 1000 elementos. 
 #lsf2 <- lsf[1:length(lsf)]
 lsf2 <- lsf[1:1500]
-<<<<<<< HEAD
 
-=======
->>>>>>> Load-pre-trained-model-feature
 dissease <- process_pix(lsf2)
 
 dissease <- dissease[,,,1]
